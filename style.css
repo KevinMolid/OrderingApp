@@ -1,0 +1,153 @@
+body {
+    color: #000;
+    background: #eee;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 600px;
+    padding: 0 46px;
+}
+
+header {
+    background-image: url('images/Bg.png');
+    background-size: cover;
+}
+
+.header-content {
+    height: 167px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-txt {
+    font-size: 32px;
+    line-height: 1;
+    margin: 0 0 10px 0;
+}
+
+.logo-sub {
+    font-weight: 400;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1;
+}
+
+/* Main */
+main {
+    background: white;
+    height: fit-content;
+    padding-top: 67px;
+    padding-bottom: 53px;
+}
+
+/* Items section */
+.item-wrapper {
+    width: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #D2D2D2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.emoji {
+    font-size: 5em;
+    margin: 0;
+    margin-right: 30px;
+}
+
+.item-txt {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
+.ingredients-txt {
+    font-size: 16px;
+    color: #8B8B8B;
+    margin: 8 0 8;
+}
+
+.price-txt {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.add-item-btn {
+    font-family: 'Montserrat', sans-serif;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #3C3C3C;
+    background: white;
+    border-radius: 50%;
+    border: 1.5px solid #DEDEDE;
+    margin-left: auto;
+}
+
+.add-item-btn:hover {
+    border: 1.5px solid #ccc;
+    box-shadow: 0 0 5px #16DB9955;
+    cursor: pointer;
+}
+
+/* Order section */
+.order-section {
+    display: none;
+}
+
+.order-heading {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.ordered-items {
+    border-bottom: 2px solid #393333;
+}
+
+.order-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-line-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+small {
+    font-size: 12px;;
+    color: #BBBBBB;
+}
+
+small:hover {
+    cursor: pointer;
+}
+
+.order-btn {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: #16DB99;
+    border: none;
+    border-radius: 3px;
+    margin-top: 50px;
+}
