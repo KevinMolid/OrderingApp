@@ -30,7 +30,13 @@ const menuArray = [
 // Sections
 const itemsSection = document.getElementById('items-section')
 const orderSection = document.getElementById('order-section')
+const orderedSection = document.getElementById('ordered-section')
+
+// Elements
 const orderedItems = document.getElementById('ordered-items')
+const orderModal = document.getElementById('order-modal')
+const orderForm = document.getElementById('order-form')
+const buyerName = document.getElementById('buyer-name')
 
 itemsSection.innerHTML = menuArray.map(function(item){
     return `
@@ -79,4 +85,22 @@ document.querySelector('.order-section').addEventListener('click', function(even
         totalPriceEl.innerText = totalPrice
         event.target.parentElement.parentElement.innerHTML = ''
     }
+    else if (event.target.id === 'order-btn') {
+        orderModal.style.display = 'flex'
+    }
+})
+
+orderForm.addEventListener('submit', function(e){
+    e.preventDefault()
+    const orderFormData = new FormData(orderForm)
+    const name = orderFormData.get('name')
+
+    buyerName.innerText = name
+
+    // close modal and section
+    orderModal.style.display = 'none'
+    orderSection.style.display = 'none'
+
+    // Show ordered section
+    orderedSection.style.display = 'flex'
 })

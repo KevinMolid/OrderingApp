@@ -42,8 +42,44 @@
                             <h3>Total Price</h3>
                             <p>$<span id="total-price">0</span></p>
                         </div>
-                        <button class="order-btn">Complete order</button>
+                        <button class="order-btn" id="order-btn">Complete order</button>
                     </section>
+
+                    <!-- Order modal -->
+                    <div class="order-modal" id="order-modal">
+                        <form class="order-form" id="order-form">
+                            <h2>Enter card details</h2>
+                            <input 
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required>
+                            <input 
+                                type="number"
+                                id="card-number"
+                                name="card-number"
+                                placeholder="Enter card number"
+                                required>
+                            <input 
+                                type="number"
+                                id="buyer-CCV"
+                                name="CCV"
+                                placeholder="Enter CCV"
+                                required>
+                            <button 
+                                type="submit"
+                                class="pay-btn"
+                                id="pay-btn">Pay</button>
+                        </form>
+                    </div>
+
+                    <!-- Ordered section -->
+                    <section class="ordered-section" id="ordered-section">
+                        <h2 class="ordered-txt">Thanks, <span id="buyer-name">dude</span>! Your order is on its way!</h2>
+                    </section>
+
+                    
                 </div>
             </div>
 

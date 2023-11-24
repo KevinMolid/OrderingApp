@@ -18,12 +18,17 @@ body {
 }
 
 header {
+    width: 100vw;
+    max-width: 600px;
+    height:30vw;
+    max-height: 167px;
     background-image: url('images/Bg.png');
     background-size: cover;
 }
 
 .header-content {
-    height: 167px;
+    height:30vw;
+    max-height: 167px;
     width: 100%;
     color: #fff;
     display: flex;
@@ -78,7 +83,8 @@ main {
 .ingredients-txt {
     font-size: 16px;
     color: #8B8B8B;
-    margin: 8 0 8;
+    line-height: 1.5;
+    margin: 0;
 }
 
 .price-txt {
@@ -150,4 +156,121 @@ small:hover {
     border: none;
     border-radius: 3px;
     margin-top: 50px;
+}
+
+/* Order modal */
+.order-modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 524px;
+    height: 542px;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 150px rgba(0, 0, 0, 0.5);
+}
+
+.order-modal h2 {
+    text-align: left;
+    display: block;
+    margin: auto auto 46px;
+    width: 300px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+input, .pay-btn {
+    box-sizing: border-box;
+    padding: 17px 26px;
+    font-size: 20px;
+    display: block;
+    width: 476px;
+    margin-bottom: 23px;
+}
+
+.pay-btn {
+    font-weight: bold;  
+    margin-top: 46px;
+    color: white;
+    background-color: #16DB99;
+    border: none;
+    border-radius: 4px;
+}
+
+.pay-btn:hover, .order-btn:hover {
+    background-color: #01C684;
+    cursor: pointer;
+}
+
+/* Ordered section */
+
+.ordered-section {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 26px 52px;
+    background: #ECFDF5;
+    text-align: center;
+    display: none;
+}
+
+.ordered-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .emoji {
+        margin-right: 20px;
+    }
+
+    .header-content {
+        margin-left: 16px;
+    }
+
+    .order-modal {
+        width: 90%;
+    }
+
+    input, .pay-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .emoji {
+        margin-right: 10px;
+    }
+
+    .header-content {
+        margin-left: 26px;
+    }
+
+    .logo-txt {
+        font-size: 24px;
+    }
+
+    .item-txt {
+        max-width: 40%;
+    }
+
+    .logo-sub, .ingredients-txt {
+        font-size: 14px;
+    }
+
+    .ordered-section h2 {
+        font-size: 18px;
+    }
 }
