@@ -218,7 +218,8 @@ input, .pay-btn {
     display: none;
 }
 
-.ordered-section h2 {
+.ordered-txt {
+    color: #065F46;
     font-size: 24px;
     font-weight: 600;
 }
@@ -270,7 +271,7 @@ input, .pay-btn {
         font-size: 14px;
     }
 
-    .ordered-section h2 {
+    .ordered-txt {
         font-size: 18px;
     }
 }
